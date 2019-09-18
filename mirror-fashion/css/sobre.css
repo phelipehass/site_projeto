@@ -1,0 +1,124 @@
+body { /* referenciação por nome da TAG*/
+    color: #333333;
+    font-family: 'Lucida Sans Unicode','Lucida grande',sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+}
+h1{
+    background-image: url(../img/sobre-background.jpg);
+    padding: 10px;
+}
+h2 {
+    border-bottom:3px solid #333333; /*risco preto abaixo dos subtítulos*/
+    margin-top: 30px;
+}
+
+figure {
+    background-color: #f2eded;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+}
+
+.video{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.localizacao{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px; 
+}
+
+p {
+    padding: 0 45px;
+    text-indent: 15px;
+    text-align: justify;
+}
+
+#centro-distribuicao {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
+footer {
+    color: #777;
+    clear: both;
+    padding: 20px 0;
+    background-image: url(../img/fundo-rodape.png);
+}
+
+footer .container{
+    position: relative;
+}
+
+.social {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+.social li{
+    float: left;
+    margin-left: 25px;
+}
+
+.social a{
+    /*tamanho da imagem*/
+    height: 32px;
+    width: 32px;
+
+    /*renderizando texto fora da tela*/
+    display: block;
+    text-indent: -999999px;
+}
+
+/*sobrepondo imagens nos textos*/
+.social a[href*="facebook.com"]{
+    background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"]{
+    background-image: url(../img/twitter.png);
+}
+
+/*fim da sobreposição*/
+
+/*footer img {
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+}*/
+
+#familia-pelho {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+p::first-letter{
+    font-weight: bold;
+}
+
+h1 + p{
+    text-indent: 0;
+}
+
+/*
+p::first-line {
+    font-variant: small-caps;
+}
+*/
+
+:not(p) + p::first-line{
+    font-variant: small-caps;
+}
